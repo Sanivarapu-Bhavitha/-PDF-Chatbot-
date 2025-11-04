@@ -1,5 +1,7 @@
 streamlit
-openai>=1.0.0
+openai
+langchain
 PyPDF2
-langchain-text-splitters
+faiss-cpu
+tiktoken
 python-dotenv
