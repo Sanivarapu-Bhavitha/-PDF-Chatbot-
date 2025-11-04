@@ -2,7 +2,7 @@ import os
 import streamlit as st
 from openai import OpenAI
 from PyPDF2 import PdfReader
-from langchain.text_splitters import RecursiveCharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from dotenv import load_dotenv
 
 # --- Load environment variables ---
@@ -56,6 +56,7 @@ if uploaded_file:
                 st.error(f"❌ API Error: {e}")
 else:
     st.info("⬆️ Please upload a PDF to begin.")
+
 
 
 
