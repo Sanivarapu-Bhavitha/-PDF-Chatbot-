@@ -53,7 +53,7 @@ if query:
     with st.spinner("⏳ Getting answer..."):
         try:
             response = client.chat.completions.create(
-                model="gpt-3.5-turbo"",
+                model="gpt-3.5-turbo",
                 messages=[
                     {"role": "system", "content": "You are a helpful assistant that answers based on a provided PDF document."},
                     {"role": "user", "content": f"PDF Content:\n{text[:4000]}\n\nQuestion: {query}"}
@@ -65,4 +65,5 @@ if query:
 
         except Exception as e:
             st.error(f"❌ API Error: {e}")
+
 
